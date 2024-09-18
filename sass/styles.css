@@ -19,4 +19,19 @@
 body {
   display: flex;
   flex-direction: column;
+}
+
+/**** header ****/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-retour {
+  border: none;
+  font-size: 26px;
+  position: absolute;
+  left: 0;
 }/*# sourceMappingURL=styles.css.map */
