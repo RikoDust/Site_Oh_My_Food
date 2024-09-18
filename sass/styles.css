@@ -1,1 +1,22 @@
-/*# sourceMappingURL=styles.css.map */
+/******* General *******/
+* {
+  font-family: "roboto";
+}
+
+.logo-title {
+  font-family: "Shrikhand";
+}
+
+:root {
+  --primary-color: #9356DC;
+  --secondary-color:#FF79DA;
+  --tertiary-color: #99E2D0;
+  --green-font-color: #008766;
+  --blue-color: #89C8FA;
+  --dark-blue-color: #003A68;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=styles.css.map */
