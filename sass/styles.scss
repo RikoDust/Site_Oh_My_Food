@@ -127,4 +127,61 @@ header{
 }
 
 
+/**** section restaurants ****/
 
+.restaurants{
+    background-color: var(--background-grey);
+}
+
+.restaurants h3{
+    font-size: 27px;
+    padding-top: 2rem;
+}
+
+.restaurants-cards a{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+}
+
+.restaurants-cards .card{
+    border-radius: 20px;
+}
+
+.restaurants-cards img{
+    width: 100%;
+    object-fit: fill;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.restaurants-cards .card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.restaurants-cards .card-content i{
+    font-size: 35px;
+    padding-right: 25px;
+}
+
+.restaurants-cards .card-txt{
+    margin-left: 10px;
+}
+
+.restaurants-cards .card-txt h4{
+    font-size: 22px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.restaurants-cards .card-txt p{
+    font-size: 20px;
+    margin-top: 0px;
+}
