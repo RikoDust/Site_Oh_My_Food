@@ -110,9 +110,18 @@ header {
 
 .fonctionnement-etapes {
   display: flex;
-  justify-content: space-between;
 }
 
-.fonctionnement-etapes ol li {
-  margin-bottom: 20px;
+.fonctionnement-etapes li {
+  border-radius: 30px;
+  background-color: var(--background-grey);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 322px;
+  height: 73px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fonctionnement-etapes i {
+  padding: 5px 10px;
 }/*# sourceMappingURL=styles.css.map */
