@@ -35,7 +35,8 @@ header{
     align-items: center;
     justify-content: center;
     position: relative;
-
+    width: 100vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
 }
 
 .btn-retour{
@@ -43,4 +44,53 @@ header{
     font-size: 26px;
     position: absolute;
     left: 0;
+}
+
+
+/**** section explorer-reservez ****/
+
+.explorer-reservez{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.explorer-reservez input{
+    width: 100vw;
+    height: 3rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),
+}
+
+::placeholder{
+    display: flex;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.explorer-reservez h2{
+    font-size: 27px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.explorer-reservez p{
+    font-size: 19px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+}
+
+.btn-explorer{
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    padding: 16px 22px;
+    color: white;
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
