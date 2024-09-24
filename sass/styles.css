@@ -182,4 +182,27 @@ header {
 .restaurants-cards .card-txt p {
   font-size: 20px;
   margin-top: 0px;
+}
+
+/**** footer ****/
+footer {
+  background-color: #353535;
+}
+
+footer h4 {
+  font-size: 28px;
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  font-size: 22px;
+  list-style-type: none;
+  margin-left: -10px;
+  margin-bottom: 2px;
+}
+
+footer a {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
