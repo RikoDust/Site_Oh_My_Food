@@ -35,8 +35,7 @@ header {
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-.btn-retour {
+header .header__btn-retour {
   border: none;
   font-size: 26px;
   position: absolute;
@@ -185,24 +184,24 @@ header {
 }
 
 /**** footer ****/
-footer {
+.footer {
   background-color: #353535;
 }
 
-footer h4 {
+.footer .logo-title {
   font-size: 28px;
   color: white;
   margin-left: 30px;
   margin-bottom: 0px;
 }
 
-footer ul li {
+.footer ul li {
   font-size: 22px;
   list-style-type: none;
   margin-left: -10px;
   margin-bottom: 2px;
 }
 
-footer a {
+.footer a {
   color: white;
 }/*# sourceMappingURL=styles.css.map */
