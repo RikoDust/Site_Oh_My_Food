@@ -39,7 +39,7 @@ header .header__btn-retour {
   border: none;
   font-size: 26px;
   position: absolute;
-  left: 0;
+  left: 1rem;
 }
 
 /**** section explorer-reservez ****/
@@ -130,6 +130,28 @@ header .header__btn-retour {
   background-color: var(--background-grey);
 }
 
+/* vu avec le mentor 
+.card{
+    img{
+        width: 100%;
+        object-fit: fill;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        div{
+
+        }
+    }
+
+}
+*/
 .restaurants h3 {
   font-size: 27px;
   padding-top: 2rem;
@@ -195,13 +217,13 @@ header .header__btn-retour {
   margin-bottom: 0px;
 }
 
-.footer ul li {
+.footer .menu-footer {
   font-size: 22px;
   list-style-type: none;
   margin-left: -10px;
-  margin-bottom: 2px;
+  margin-bottom: 2rem;
 }
 
-.footer a {
+.footer .menu-footer__lien {
   color: white;
 }/*# sourceMappingURL=styles.css.map */

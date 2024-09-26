@@ -38,10 +38,10 @@ header{
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     .header__btn-retour{
-       border: none;
-       font-size: 26px;
-       position: absolute;
-       left: 0;
+        border: none;
+        font-size: 26px;
+        position: absolute;
+        left: 1rem;
     }
   }
 
@@ -132,6 +132,29 @@ header{
     background-color: var(--background-grey);
 }
 
+/* vu avec le mentor 
+.card{
+    img{
+        width: 100%;
+        object-fit: fill;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        div{
+
+        }
+    }
+
+}
+*/
+
 .restaurants h3{
     font-size: 27px;
     padding-top: 2rem;
@@ -199,15 +222,13 @@ header{
     margin-bottom: 0px;
 }
 
-
-.footer ul li{
+.footer .menu-footer{
     font-size: 22px;
     list-style-type: none;
     margin-left: -10px;
-    margin-bottom: 2px;
+    margin-bottom: 2rem;
 }
 
-.footer a{
+.footer .menu-footer__lien{
     color: white;
 }
-
