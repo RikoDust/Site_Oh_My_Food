@@ -1,4 +1,7 @@
-/******* General *******/
+/****** imports ******/
+@import '../sass/header.css';
+@import '../sass/footer.css';
+/****** General ******/
 * {
   font-family: "roboto";
 }
@@ -25,21 +28,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-
-/**** header ****/
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-header .header__btn-retour {
-  border: none;
-  font-size: 26px;
-  position: absolute;
-  left: 1rem;
 }
 
 /**** section explorer-reservez ****/
@@ -203,27 +191,4 @@ header .header__btn-retour {
 .restaurants-cards .card-txt p {
   font-size: 20px;
   margin-top: 0px;
-}
-
-/**** footer ****/
-.footer {
-  background-color: #353535;
-}
-
-.footer .logo-title {
-  font-size: 28px;
-  color: white;
-  margin-left: 30px;
-  margin-bottom: 0px;
-}
-
-.footer .menu-footer {
-  font-size: 22px;
-  list-style-type: none;
-  margin-left: -10px;
-  margin-bottom: 2rem;
-}
-
-.footer .menu-footer__lien {
-  color: white;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

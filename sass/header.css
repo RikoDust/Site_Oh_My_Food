@@ -1,0 +1,14 @@
+/****** header ******/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+header .header__btn-retour {
+  border: none;
+  font-size: 26px;
+  position: absolute;
+  left: 1rem;
+}/*# sourceMappingURL=header.css.map */
