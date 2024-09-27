@@ -2,11 +2,13 @@
 
 @import '../sass/header.css' ;
 @import '../sass/footer.css' ;
-
+@import '../sass/variables.css';
 
 
 /****** General ******/
 
+
+/*** polices ***/
 *{
     font-family: 'roboto';
 }
@@ -25,6 +27,7 @@
     --dark-blue-color: #003A68;
     --background-grey: #F6F6F6;
 }
+
 
 body{
     display: flex;

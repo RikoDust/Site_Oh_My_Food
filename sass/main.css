@@ -1,7 +1,9 @@
 /****** imports ******/
 @import '../sass/header.css';
 @import '../sass/footer.css';
+@import '../sass/variables.css';
 /****** General ******/
+/*** polices ***/
 * {
   font-family: "roboto";
 }
