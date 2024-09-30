@@ -1,40 +1,14 @@
+/****** imports ******/
 
-/****** General ******/
+/*** base ***/
+@import '../sass/base/base';
+@import '../sass/base/variables';
 
-/* 
-$primary-color:#9356DC;
-$secondary-color:#FF79DA;
-$tertiary-color: #99E2D0;
-$green-font-color: #008766;
-$blue-color: #89C8FA;
-$dark-blue-color: #003A68;
-$background-grey: #F6F6F6;
+/*** layout ***/
+@import '../sass/layout/header';
+@import '../sass/layout/footer';
 
-*/
-
-
-
-
-/*** polices ***/
-
-
-
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
-
-
-
-
-
+/*** pages ***/
+@import '../sass/pages/accueil';
 
 
