@@ -1,0 +1,17 @@
+/****** imports ******/
+
+/*** base ***/
+@import '../sass/base/variables.css';
+
+
+
+/*** layout ***/
+@import '../sass/layout/header.css';
+@import '../sass/layout/footer.css';
+
+
+
+/*** pages ***/
+@import '../sass/pages/accueil.css';
+
+
