@@ -40,17 +40,17 @@ header .header__btn-retour {
 }
 
 .footer .logo-title {
-  font-size: 28px;
+  font-size: 26px;
   color: white;
   margin-left: 30px;
   margin-bottom: 0px;
 }
 
 .footer .menu-footer {
-  font-size: 22px;
+  font-size: 20px;
   list-style-type: none;
   margin-left: -10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer .menu-footer__lien {
@@ -121,7 +121,10 @@ header .header__btn-retour {
 
 /**** section fonctionnement ****/
 .fonctionnement h3 {
-  font-size: 27px;
+  margin-left: 1rem;
+  font-size: 26px;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 .fonctionnement-etapes {
@@ -130,17 +133,44 @@ header .header__btn-retour {
 
 .fonctionnement-etapes li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  width: 322px;
+  width: 330px;
   height: 73px;
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.fonctionnement-etapes span {
+  border-radius: 50%;
+  font-size: 17px;
+  width: 22px;
+  height: 22px;
+  color: white;
+  background-color: #9356DC;
+  position: absolute;
+  left: -11px;
 }
 
 .fonctionnement-etapes i {
-  padding: 5px 10px;
+  padding-right: 1.5rem;
+  padding-left: 0rem;
+}
+
+.fonctionnement-etapes li .fa-solid {
+  font-size: 20px;
+}
+
+.fa-mobile-screen-button, .fa-list-ul {
+  color: grey;
+}
+
+.fa-store {
+  color: #9356DC;
 }
 
 /**** section restaurants ****/
