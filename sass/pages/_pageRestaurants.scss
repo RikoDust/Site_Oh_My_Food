@@ -1,0 +1,14 @@
+/***** page restaurants *****/
+
+.page-restaurant img{
+    width: 100%;
+    object-fit: fill;
+}
+
+
+
+.btn-commander{
+    @include btn;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
