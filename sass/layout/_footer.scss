@@ -3,7 +3,7 @@
 .footer{
     background-color: #353535;
     .footer__logo-title{
-        @include logo-title;
+        font-family: $logo-title;
         font-size: 26px;
         color: white;
         margin-left: 30px;
