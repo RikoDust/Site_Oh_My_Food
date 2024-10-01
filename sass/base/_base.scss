@@ -1,8 +1,19 @@
 
+
 body{
     display: flex;
     flex-direction: column;
 }
+
+*{
+    font-family: 'roboto';
+}
+
+.logo-title{
+    font-family: 'Shrikhand';
+}
+
+
 
 a{
     text-decoration: none;

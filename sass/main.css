@@ -5,13 +5,6 @@ body {
   flex-direction: column;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/*** layout ***/
-/****** header ******/
 * {
   font-family: "roboto";
 }
@@ -20,6 +13,13 @@ a {
   font-family: "Shrikhand";
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*** layout ***/
+/****** header ******/
 header {
   display: flex;
   align-items: center;
@@ -59,6 +59,86 @@ header .header__btn-retour {
 
 /*** pages ***/
 /****** page accueil ******/
+/**** section restaurants ****/
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+/* vu avec le mentor 
+.card{
+    img{
+        width: 100%;
+        object-fit: fill;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        div{
+
+        }
+    }
+
+}
+*/
+.restaurants h3 {
+  font-size: 27px;
+  padding-top: 2rem;
+}
+
+.restaurants-cards a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.restaurants-cards .card {
+  border-radius: 20px;
+}
+
+.restaurants-cards img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.restaurants-cards .card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.restaurants-cards .card-content i {
+  font-size: 35px;
+  padding-right: 25px;
+}
+
+.restaurants-cards .card-txt {
+  margin-left: 10px;
+}
+
+.restaurants-cards .card-txt h4 {
+  font-size: 22px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.restaurants-cards .card-txt p {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
 /**** section explorer-reservez ****/
 .explorer-reservez {
   display: flex;
@@ -171,84 +251,4 @@ header .header__btn-retour {
 
 .fa-store {
   color: #9356DC;
-}
-
-/**** section restaurants ****/
-.restaurants {
-  background-color: #F6F6F6;
-}
-
-/* vu avec le mentor 
-.card{
-    img{
-        width: 100%;
-        object-fit: fill;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-
-    }
-    &__content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-        div{
-
-        }
-    }
-
-}
-*/
-.restaurants h3 {
-  font-size: 27px;
-  padding-top: 2rem;
-}
-
-.restaurants-cards a {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 20px;
-  margin-bottom: 3rem;
-}
-
-.restaurants-cards .card {
-  border-radius: 20px;
-}
-
-.restaurants-cards img {
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.restaurants-cards .card-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 24px;
-}
-
-.restaurants-cards .card-content i {
-  font-size: 35px;
-  padding-right: 25px;
-}
-
-.restaurants-cards .card-txt {
-  margin-left: 10px;
-}
-
-.restaurants-cards .card-txt h4 {
-  font-size: 22px;
-  margin-top: 6px;
-  margin-bottom: 2px;
-}
-
-.restaurants-cards .card-txt p {
-  font-size: 20px;
-  margin-top: 0px;
 }/*# sourceMappingURL=main.css.map */
