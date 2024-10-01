@@ -12,5 +12,7 @@ header{
         position: absolute;
         left: 1rem;
     }
-  }
-
+    h1{
+        @include logo-title;
+    }
+}

@@ -2,23 +2,21 @@
 
 .footer{
     background-color: #353535;
-}
-
-.footer .logo-title{
-    font-size: 26px;
-    color: white;
-    margin-left: 30px;
-    margin-bottom: 0px;
-}
-
-.footer .menu-footer{
-    font-size: 20px;
-    list-style-type: none;
-    margin-left: -10px;
-    margin-bottom: 1.5rem;
-}
-
-.footer .menu-footer__lien{
-    color: white;
+    .footer__logo-title{
+        @include logo-title;
+        font-size: 26px;
+        color: white;
+        margin-left: 30px;
+        margin-bottom: 0px;
+    }
+    .footer__liste{
+        font-size: 20px;
+        list-style-type: none;
+        margin-left: -10px;
+        margin-bottom: 1.5rem;
+        .footer__liste__lien{
+            color: white;
+        }
+    }
 }
 

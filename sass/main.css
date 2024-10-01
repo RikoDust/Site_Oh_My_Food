@@ -9,10 +9,11 @@ body {
   font-family: "roboto";
 }
 
-.logo-title {
-  font-family: "Shrikhand";
+/*
+.logo-title{
+    font-family: 'Shrikhand';
 }
-
+*/
 a {
   text-decoration: none;
   color: black;
@@ -33,32 +34,147 @@ header .header__btn-retour {
   position: absolute;
   left: 1rem;
 }
+header h1 {
+  font-family: "Shrikhand";
+}
 
 /****** footer ******/
 .footer {
   background-color: #353535;
 }
-
-.footer .logo-title {
+.footer .footer__logo-title {
+  font-family: "Shrikhand";
   font-size: 26px;
   color: white;
   margin-left: 30px;
   margin-bottom: 0px;
 }
-
-.footer .menu-footer {
+.footer .footer__liste {
   font-size: 20px;
   list-style-type: none;
   margin-left: -10px;
   margin-bottom: 1.5rem;
 }
-
-.footer .menu-footer__lien {
+.footer .footer__liste .footer__liste__lien {
   color: white;
 }
 
 /*** pages ***/
-/****** page accueil ******/
+/**** section explorer-reservez ****/
+.explorer-reservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+
+.explorer-reservez input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: #F6F6F6;
+}
+
+::-moz-placeholder {
+  display: flex;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+::placeholder {
+  display: flex;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.explorer-reservez h2 {
+  font-size: 27px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.explorer-reservez p {
+  font-size: 19px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0rem;
+}
+
+.btn-explorer {
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  padding: 16px 22px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+}
+
+.btn-explorer:hover {
+  filter: brightness(1.1);
+}
+
+/**** section fonctionnement ****/
+.fonctionnement h3 {
+  margin-left: 1rem;
+  font-size: 26px;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+
+.fonctionnement-etapes {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement-etapes li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 330px;
+  height: 73px;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.fonctionnement-etapes span {
+  border-radius: 50%;
+  font-size: 17px;
+  width: 22px;
+  height: 22px;
+  color: white;
+  background-color: #9356DC;
+  position: absolute;
+  left: -11px;
+}
+
+.fonctionnement-etapes i {
+  padding-right: 1.5rem;
+  padding-left: 0rem;
+}
+
+.fonctionnement-etapes li .fa-solid {
+  font-size: 20px;
+}
+
+.fa-mobile-screen-button, .fa-list-ul {
+  color: grey;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
 /**** section restaurants ****/
 .restaurants {
   background-color: #F6F6F6;
@@ -137,118 +253,4 @@ header .header__btn-retour {
 .restaurants-cards .card-txt p {
   font-size: 20px;
   margin-top: 0px;
-}
-
-/**** section explorer-reservez ****/
-.explorer-reservez {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #F6F6F6;
-}
-
-.explorer-reservez input {
-  width: 100%;
-  height: 3rem;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  background-color: #F6F6F6;
-}
-
-::-moz-placeholder {
-  display: flex;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-
-::placeholder {
-  display: flex;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-
-.explorer-reservez h2 {
-  font-size: 27px;
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.explorer-reservez p {
-  font-size: 19px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 0rem;
-}
-
-.btn-explorer {
-  font-size: 18px;
-  border-radius: 30px;
-  border: none;
-  padding: 16px 22px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 3rem;
-}
-
-.btn-explorer:hover {
-  filter: brightness(1.1);
-}
-
-/**** section fonctionnement ****/
-.fonctionnement h3 {
-  margin-left: 1rem;
-  font-size: 26px;
-  margin-top: 3rem;
-  margin-bottom: 0rem;
-}
-
-.fonctionnement-etapes {
-  display: flex;
-}
-
-.fonctionnement-etapes li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  background-color: #F6F6F6;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  width: 330px;
-  height: 73px;
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.fonctionnement-etapes span {
-  border-radius: 50%;
-  font-size: 17px;
-  width: 22px;
-  height: 22px;
-  color: white;
-  background-color: #9356DC;
-  position: absolute;
-  left: -11px;
-}
-
-.fonctionnement-etapes i {
-  padding-right: 1.5rem;
-  padding-left: 0rem;
-}
-
-.fonctionnement-etapes li .fa-solid {
-  font-size: 20px;
-}
-
-.fa-mobile-screen-button, .fa-list-ul {
-  color: grey;
-}
-
-.fa-store {
-  color: #9356DC;
 }/*# sourceMappingURL=main.css.map */
