@@ -143,13 +143,11 @@ header h1 {
   margin-top: 3rem;
   margin-bottom: 0rem;
 }
-
-.fonctionnement-etapes {
+.fonctionnement .fonctionnement-etapes {
   display: flex;
   flex-direction: column;
 }
-
-.fonctionnement-etapes li {
+.fonctionnement .fonctionnement-etapes li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,8 +160,7 @@ header h1 {
   margin-bottom: 2rem;
   position: relative;
 }
-
-.fonctionnement-etapes span {
+.fonctionnement .fonctionnement-etapes li span {
   border-radius: 50%;
   font-size: 17px;
   width: 22px;
@@ -173,21 +170,17 @@ header h1 {
   position: absolute;
   left: -11px;
 }
-
-.fonctionnement-etapes i {
+.fonctionnement .fonctionnement-etapes li i {
   padding-right: 1.5rem;
   padding-left: 0rem;
 }
-
-.fonctionnement-etapes li .fa-solid {
+.fonctionnement .fonctionnement-etapes li .fa-solid {
   font-size: 20px;
 }
-
-.fa-mobile-screen-button, .fa-list-ul {
+.fonctionnement .fonctionnement-etapes li .fa-mobile-screen-button, .fonctionnement .fonctionnement-etapes li .fa-list-ul {
   color: grey;
 }
-
-.fa-store {
+.fonctionnement .fonctionnement-etapes li .fa-store {
   color: #9356DC;
 }
 
