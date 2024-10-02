@@ -27,7 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header .header__btn-retour {
   border: none;
@@ -84,6 +84,7 @@ header h1 {
 }
 .btn-commander:hover {
   filter: brightness(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /**** section explorer-reservez ****/
@@ -94,24 +95,18 @@ header h1 {
   text-align: center;
   background-color: #F6F6F6;
 }
-.explorer-reservez input {
+.explorer-reservez div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   background-color: #F6F6F6;
 }
-.explorer-reservez input ::-moz-placeholder { /* refaire cette section*/
-  display: flex;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-.explorer-reservez input ::placeholder { /* refaire cette section*/
-  display: flex;
-  text-align: center;
-  color: black;
-  font-weight: bold;
+.explorer-reservez div i {
+  margin-right: 1rem;
 }
 .explorer-reservez h2 {
   font-size: 27px;
@@ -137,6 +132,7 @@ header h1 {
 }
 .explorer-reservez .btn-explorer:hover {
   filter: brightness(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /**** section fonctionnement ****/
