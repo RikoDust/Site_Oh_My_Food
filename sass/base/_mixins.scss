@@ -18,3 +18,13 @@
       }
 }
 
+/*** etiquettes "nouveau" ***/
+
+@mixin etiquette{
+    background-color: $tertiary-color;
+    color: $green-color;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 6px;
+}
+

@@ -15,6 +15,7 @@ a {
   color: black;
 }
 
+/*** etiquettes "nouveau" ***/
 /**** couleurs ****/
 /**** polices ****/
 /*** layout ***/
@@ -188,79 +189,67 @@ header h1 {
 .restaurants {
   background-color: #F6F6F6;
 }
-
-/* vu avec le mentor 
-.card{
-    img{
-        width: 100%;
-        object-fit: fill;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-
-    }
-    &__content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-        div{
-
-        }
-    }
-
-}
-*/
 .restaurants h3 {
   margin-left: 1rem;
   font-size: 26px;
   padding-top: 2rem;
 }
-
-.restaurants-cards a {
+.restaurants .restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurants .restaurants-cards a {
   display: flex;
   flex-direction: column;
   background-color: white;
+  width: 92vw;
   border-radius: 20px;
   margin-bottom: 3rem;
 }
-
-.restaurants-cards .card {
+.restaurants .restaurants-cards a .card {
   border-radius: 20px;
+  position: relative;
+  display: inline-block;
 }
-
-.restaurants-cards img {
+.restaurants .restaurants-cards a .card .etiquette {
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 6px;
+  position: absolute;
+  top: 15px;
+  left: 290px;
+}
+.restaurants .restaurants-cards a .card img {
   width: 100%;
+  height: 250px;
   -o-object-fit: fill;
      object-fit: fill;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.restaurants-cards .card-content {
+.restaurants .restaurants-cards a .card .card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
 }
-
-.restaurants-cards .card-content i {
-  font-size: 35px;
-  padding-right: 25px;
-}
-
-.restaurants-cards .card-txt {
+.restaurants .restaurants-cards a .card .card-content .card-txt {
   margin-left: 10px;
 }
-
-.restaurants-cards .card-txt h4 {
+.restaurants .restaurants-cards a .card .card-content .card-txt h4 {
   font-size: 22px;
   margin-top: 6px;
   margin-bottom: 2px;
 }
-
-.restaurants-cards .card-txt p {
+.restaurants .restaurants-cards a .card .card-content .card-txt p {
   font-size: 20px;
   margin-top: 0px;
+}
+.restaurants .restaurants-cards a .card .card-content i {
+  font-size: 30px;
+  padding-right: 25px;
 }/*# sourceMappingURL=main.css.map */
