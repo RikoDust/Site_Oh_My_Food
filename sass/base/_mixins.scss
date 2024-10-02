@@ -1,8 +1,11 @@
+/*** mise en page titre de section ***/
 
 @mixin section-title{
     margin-left: 1rem;
     font-size: 26px;
 }
+
+/*** miss en forme bouton ***/
 
 @mixin btn{
     font-size: 18px;

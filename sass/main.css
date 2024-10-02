@@ -15,6 +15,8 @@ a {
   color: black;
 }
 
+/*** mise en page titre de section ***/
+/*** miss en forme bouton ***/
 /*** etiquettes "nouveau" ***/
 /**** couleurs ****/
 /**** polices ****/
@@ -148,20 +150,24 @@ header h1 {
   display: flex;
   flex-direction: column;
 }
-.fonctionnement .fonctionnement-etapes li {
+.fonctionnement .fonctionnement-etapes ul {
+  margin-right: 16px;
+  padding-left: 21px;
+}
+.fonctionnement .fonctionnement-etapes ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  width: 330px;
+  width: 100%;
   height: 73px;
   text-align: center;
   margin-bottom: 2rem;
   position: relative;
 }
-.fonctionnement .fonctionnement-etapes li span {
+.fonctionnement .fonctionnement-etapes ul li span {
   border-radius: 50%;
   font-size: 17px;
   width: 22px;
@@ -171,17 +177,17 @@ header h1 {
   position: absolute;
   left: -11px;
 }
-.fonctionnement .fonctionnement-etapes li i {
+.fonctionnement .fonctionnement-etapes ul li i {
   padding-right: 1.5rem;
   padding-left: 0rem;
 }
-.fonctionnement .fonctionnement-etapes li .fa-solid {
+.fonctionnement .fonctionnement-etapes ul li .fa-solid {
   font-size: 20px;
 }
-.fonctionnement .fonctionnement-etapes li .fa-mobile-screen-button, .fonctionnement .fonctionnement-etapes li .fa-list-ul {
+.fonctionnement .fonctionnement-etapes ul li .fa-mobile-screen-button, .fonctionnement .fonctionnement-etapes ul li .fa-list-ul {
   color: grey;
 }
-.fonctionnement .fonctionnement-etapes li .fa-store {
+.fonctionnement .fonctionnement-etapes ul li .fa-store {
   color: #9356DC;
 }
 
