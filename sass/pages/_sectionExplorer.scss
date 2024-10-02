@@ -1,47 +1,42 @@
 
 /**** section explorer-reservez ****/
 
+
 .explorer-reservez {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: $background-grey;
+    input {
+      width: 100%;
+      height: 3rem;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      background-color: $background-grey;
+      ::placeholder { /* refaire cette section*/
+        display: flex;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+      }
+    }
+    h2 {
+      font-size: 27px;
+      margin-top: 2rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+    p {
+      font-size: 19px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 0rem;
+    }
+    .btn-explorer {
+      @include btn;
+      margin-bottom: 3rem;
+    }
   }
-  
-  .explorer-reservez input {
-    width: 100%;
-    height: 3rem;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    background-color: $background-grey;
-  }
-  
-   
-  ::placeholder {
-    display: flex;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .explorer-reservez h2 {
-    font-size: 27px;
-    margin-top: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  
-  .explorer-reservez p {
-    font-size: 19px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 0rem;
-  }
-  
-  .btn-explorer {
-    @include btn;
-    margin-bottom: 3rem;
-  }
-  
-  
+
+
