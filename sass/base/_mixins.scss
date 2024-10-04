@@ -5,9 +5,10 @@
     font-size: 26px;
 }
 
-/*** miss en forme bouton ***/
+/*** mise en forme bouton ***/
 
 @mixin btn{
+    cursor: pointer;
     font-size: 18px;
     border-radius: 30px;
     padding: 16px 22px;
