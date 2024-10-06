@@ -1,0 +1,40 @@
+/**** apparition menus ****/
+
+.entrees-delay{
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 600ms;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.plats-delay{
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1600ms;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.desserts-delay{
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1800ms;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+
+
