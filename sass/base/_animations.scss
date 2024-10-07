@@ -1,4 +1,4 @@
-/**** apparition menus ****/
+/***** apparition menus - pages restaurants *****/
 
 .entrees-delay{
     opacity:0;
@@ -35,3 +35,37 @@
 
 
 
+/***** remplissage coeur *****/
+
+
+/* Cache la case à cocher */
+.heart-checkbox {
+    display: none;
+  }
+  
+  .heart-full {
+    display: none;
+    position: relative;
+  }
+  
+  .heart-empty, .heart-full {
+    cursor: pointer;
+    transition: transform 1s ease;
+  }
+  
+  
+  .heart-full::before {
+    background: linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text; /* Clipper le texte avec le fond - le fond ne deborde pas du coeur */
+    background-clip: text;
+    color: transparent; /* Cache la couleur d'origine pour afficher uniquement le linear-gradient */
+  }
+  
+  /* Quand la case est cochée, affiche le coeur plein et cache le coeur vide */
+  .heart-checkbox:checked ~ .heart-empty {
+    display: none;
+  }
+  
+  .heart-checkbox:checked ~ .heart-full {
+    display: inline;
+  }
