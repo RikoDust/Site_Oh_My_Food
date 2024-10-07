@@ -72,6 +72,86 @@
   display: inline;
 }
 
+/***** loader *****/
+/* style loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  animation: fadeOutLoader 5s forwards;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.loader div {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  animation: grow-shrink 1.5s infinite;
+}
+
+.loader div:nth-child(1) {
+  background-color: #FF79DA;
+  animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  animation-delay: 0.3s;
+}
+
+.loader div:nth-child(3) {
+  background-color: #9356DC;
+  animation-delay: 0.6s;
+}
+
+/* animation grow */
+@keyframes grow-shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+/* transition loader - contenu */
+@keyframes fadeOutLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* affichage du contenu */
+.body-content {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeInContent 5s forwards;
+  animation-delay: 7s;
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /***** general *****/
 body {
   display: flex;
