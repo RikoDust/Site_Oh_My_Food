@@ -4,6 +4,7 @@
 
 .restaurants{
     background-color: $background-grey;
+    margin-bottom: 0;
     h3{
         @include section-title;
         padding-top: 2rem;
