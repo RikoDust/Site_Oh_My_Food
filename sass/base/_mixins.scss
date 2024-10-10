@@ -5,23 +5,7 @@
     font-size: 26px;
 }
 
-/*** mise en forme bouton ***/
 
-@mixin btn{
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 30px;
-    padding: 16px 22px;
-    border: none;
-    color: white;
-    background: linear-gradient($secondary-color,$primary-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-    &:hover {
-        filter: brightness(1.1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-      }
-}
 
 /*** etiquettes "nouveau" ***/
 

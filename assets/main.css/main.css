@@ -2,44 +2,34 @@
 /****** imports ******/
 /*** base ***/
 /*** mise en page titre de section ***/
-/*** mise en forme bouton ***/
 /*** etiquettes "nouveau" ***/
 /**** couleurs ****/
 /**** polices ****/
+/**** styles ****/
 /***** apparition menus - pages restaurants *****/
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 .entrees-delay {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 600ms;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 .plats-delay {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 1200ms;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 .desserts-delay {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 1800ms;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 /***** remplissage coeur *****/
 /* Cache la case à cocher */
 .heart-checkbox {
@@ -58,7 +48,7 @@
 
 .heart-full::before {
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text; /* Clipper le texte avec le fond - le fond ne deborde pas du coeur */
+  -webkit-background-clip: text; /* Le fond ne deborde pas du coeur */
   background-clip: text;
   color: transparent; /* Cache la couleur d'origine pour afficher uniquement le linear-gradient */
 }
@@ -85,33 +75,28 @@
   width: 100%;
   background-color: white;
   z-index: 9999;
-  animation: fadeOutLoader 5s forwards;
+  animation: fadeOutLoader 6s forwards;
 }
-
-.loader {
+.loader-container .loader {
   display: flex;
   justify-content: space-between;
   width: 80px;
 }
-
-.loader div {
+.loader-container .loader div {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   animation: grow-shrink 1.5s infinite;
 }
-
-.loader div:nth-child(1) {
+.loader-container .loader div:nth-child(1) {
   background-color: #FF79DA;
   animation-delay: 0s;
 }
-
-.loader div:nth-child(2) {
+.loader-container .loader div:nth-child(2) {
   background: linear-gradient(90deg, #FF79DA, #9356DC);
   animation-delay: 0.3s;
 }
-
-.loader div:nth-child(3) {
+.loader-container .loader div:nth-child(3) {
   background-color: #9356DC;
   animation-delay: 0.6s;
 }
@@ -125,7 +110,7 @@
     transform: scale(1.5);
   }
 }
-/* transition loader - contenu */
+/* transition loader - contenu de la page */
 @keyframes fadeOutLoader {
   0% {
     opacity: 1;
@@ -133,23 +118,6 @@
   100% {
     opacity: 0;
     visibility: hidden;
-  }
-}
-/* affichage du contenu */
-.body-content {
-  opacity: 0;
-  visibility: hidden;
-  animation: fadeInContent 5s forwards;
-  animation-delay: 7s;
-}
-
-@keyframes fadeInContent {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
   }
 }
 /***** coche coulissante *****/
@@ -227,6 +195,7 @@ body {
   flex-direction: column;
 }
 
+/* police de caractère pour l'ensemble des textes */
 * {
   font-family: "roboto";
 }
@@ -236,6 +205,8 @@ a {
   color: black;
 }
 
+/*** components ***/
+/*** mise en forme et effet bouton - explorer/commander  ***/
 /*** layout ***/
 /****** header ******/
 header {
@@ -331,7 +302,7 @@ header h1 {
   font-weight: 200;
   margin-left: 10px;
   border-bottom: 4px solid #99E2D0;
-  width: 13%;
+  width: 48px;
   padding-bottom: 5px;
 }
 .page-restaurant .menu-plats .assiette {
@@ -348,7 +319,7 @@ header h1 {
 }
 .page-restaurant .menu-plats .assiette span {
   font-weight: bold;
-  padding-top: 28px;
+  padding-top: 24px;
   padding-right: 10px;
   white-space: nowrap;
 }

@@ -1,0 +1,21 @@
+/*** mise en forme et effet bouton - explorer/commander  ***/
+
+@mixin btn{
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 16px 22px;
+    border: none;
+    color: $white-color;
+    background: linear-gradient($secondary-color,$primary-color);
+    box-shadow: $box-shadow1;
+
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      }
+}
+
+
+
+

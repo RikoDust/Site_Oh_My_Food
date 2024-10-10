@@ -1,37 +1,29 @@
 /***** apparition menus - pages restaurants *****/
 
-.entrees-delay{
-    opacity:0;
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 600ms;
+@mixin displayDelay($delay) {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: $delay;
 }
+
 @keyframes fadeIn{
-    to{
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
+}
+
+.entrees-delay{
+  @include displayDelay(600ms)
 }
 
 .plats-delay{
-    opacity:0;
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1200ms;
-}
-@keyframes fadeIn{
-    to{
-        opacity: 1;
-    }
+  @include displayDelay(1200ms)
 }
 
 .desserts-delay{
-    opacity:0;
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1800ms;
+  @include displayDelay(1800ms)
 }
-@keyframes fadeIn{
-    to{
-        opacity: 1;
-    }
-}
+
 
 
 
@@ -54,7 +46,7 @@
     
   .heart-full::before {
     background: linear-gradient($secondary-color, $primary-color);
-    -webkit-background-clip: text; /* Clipper le texte avec le fond - le fond ne deborde pas du coeur */
+    -webkit-background-clip: text; /* Le fond ne deborde pas du coeur */
     background-clip: text;
     color: transparent; /* Cache la couleur d'origine pour afficher uniquement le linear-gradient */
   }
@@ -72,7 +64,7 @@
 
 
   /***** loader *****/
-
+  
   /* style loader */
   .loader-container {
     display: flex;
@@ -83,39 +75,34 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color:$white-color;
     z-index: 9999;
-    animation: fadeOutLoader 5s forwards;
+    animation: fadeOutLoader 6s forwards;
+    .loader {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+      div {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        animation: grow-shrink 1.5s infinite;
+        &:nth-child(1) {
+          background-color :#FF79DA;
+          animation-delay: 0s;
+        }
+        &:nth-child(2) {
+          background: linear-gradient(90deg, #FF79DA,#9356DC);
+          animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          background-color :#9356DC;
+          animation-delay: 0.6s;
+        }
+      }
+    }
   }
-  
-  .loader {
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-  }
-  
-  .loader div {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    animation: grow-shrink 1.5s infinite;
-  }
-  
-  .loader div:nth-child(1) {
-    background-color :#FF79DA;
-    animation-delay: 0s;
-  }
-  
-  .loader div:nth-child(2) {
-    background: linear-gradient(90deg, #FF79DA,#9356DC);
-    animation-delay: 0.3s;
-  }
-  
-  .loader div:nth-child(3) {
-    background-color :#9356DC;
-    animation-delay: 0.6s;
-  }
-  
+
   /* animation grow */
   @keyframes grow-shrink {
     0%, 100% {
@@ -125,8 +112,8 @@
       transform: scale(1.5);
     }
   }
-    
-  /* transition loader - contenu */
+
+  /* transition loader - contenu de la page */
   @keyframes fadeOutLoader {
     0% {
       opacity: 1;
@@ -136,24 +123,7 @@
       visibility: hidden;
     }
   }
-    
-  /* affichage du contenu */
-  .body-content {
-    opacity: 0;
-    visibility: hidden;
-    animation: fadeInContent 5s forwards;
-    animation-delay: 7s;
-  }
-  
-  @keyframes fadeInContent {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
+
 
 
 /***** coche coulissante *****/
@@ -165,7 +135,7 @@
   justify-content: space-between;
   padding-left: 15px;
   margin-bottom: 15px;
-  background-color: white;
+  background-color: $white-color;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -214,7 +184,7 @@
       right: -60px; // Caché au début
       width: 60px;
       height: 100%;
-      color: white;
+      color: $white-color;
       background-color: $tertiary-color;
       display: flex;
       justify-content: center;
