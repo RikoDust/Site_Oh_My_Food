@@ -88,15 +88,15 @@
         border-radius: 50%;
         animation: grow-shrink 1.5s infinite;
         &:nth-child(1) {
-          background-color :#FF79DA;
+          background-color :$secondary-color;
           animation-delay: 0s;
         }
         &:nth-child(2) {
-          background: linear-gradient(90deg, #FF79DA,#9356DC);
+          background: linear-gradient(90deg, $secondary-color,$primary-color);
           animation-delay: 0.3s;
         }
         &:nth-child(3) {
-          background-color :#9356DC;
+          background-color :$primary-color;
           animation-delay: 0.6s;
         }
       }
