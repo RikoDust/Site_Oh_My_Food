@@ -13,6 +13,7 @@
       width: 100%;
       height: 3.5rem;
       border: none;
+      color: $footer-background;
       box-shadow: $box-shadow1;
       background-color: $background-grey;
       i{
@@ -37,4 +38,12 @@
     }
 }
 
+/******** Media queries ********/
 
+/* Desktop version */
+@media (min-width:1024px) {
+  .explorer-reservez div{
+    background-color: $background-grey-two;
+    box-shadow: none;
+  }
+}

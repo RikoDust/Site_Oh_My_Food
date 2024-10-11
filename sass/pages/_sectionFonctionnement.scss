@@ -1,6 +1,7 @@
 /**** section fonctionnement ****/
 
 .fonctionnement{
+    width: 100%;
     h3{
         @include section-title;
         margin-top: 3rem;
@@ -8,7 +9,9 @@
     }
     .fonctionnement-etapes{
         display: flex;
+        justify-content: center;
         flex-direction: column;
+        width: 100%;
         ul{
             margin-right: 16px;
             padding-left: 21px;
@@ -51,3 +54,30 @@
     }
 }
 
+/******** Media queries ********/
+
+/* Desktop version */
+@media (min-width:1024px) {
+        .fonctionnement{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                margin-left:3rem;
+                align-self: flex-start;
+            }
+            .fonctionnement-etapes{
+                display: flex;
+                justify-content: center;
+            }
+            .fonctionnement-etapes ul{
+            display: flex;
+            justify-content: space-around;
+                li{
+                    margin-left: 2rem;
+                    max-width: 330px;
+                }
+            }
+        }
+    }

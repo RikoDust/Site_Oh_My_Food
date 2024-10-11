@@ -16,3 +16,13 @@ header{
         font-family: $logo-title;
     }
 }
+
+
+/******** Media queries ********/
+
+/* Desktop version */
+@media (min-width:1024px) {
+    .header{
+      box-shadow: none;
+    }
+  }
