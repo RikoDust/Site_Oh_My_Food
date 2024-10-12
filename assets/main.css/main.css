@@ -418,6 +418,9 @@ header h1 {
     width: 60vw;
     max-width: 800px;
   }
+  .btn-container {
+    max-width: 80vw;
+  }
 }
 /**** section explorer-reservez ****/
 .explorer-reservez {
