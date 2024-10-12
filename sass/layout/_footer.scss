@@ -33,3 +33,28 @@
     }
 }
 
+/******** Media queries ********/
+
+/* Desktop version */
+@media (min-width:1024px) {
+    footer{
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 4rem;
+        h4{
+            margin-right: 3rem;
+            margin-left: 8rem;
+        }
+        div ul{
+            display: flex;
+            flex-direction: row;
+                li{
+                    margin: 5px;
+            }
+            li:nth-child(2){
+                margin-right: 3rem;
+            }
+
+        }
+    }
+}

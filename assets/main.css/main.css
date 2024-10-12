@@ -274,6 +274,29 @@ header h1 {
   margin-right: 10px;
 }
 
+/******** Media queries ********/
+/* Desktop version */
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 4rem;
+  }
+  footer h4 {
+    margin-right: 3rem;
+    margin-left: 8rem;
+  }
+  footer div ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div ul li {
+    margin: 5px;
+  }
+  footer div ul li:nth-child(2) {
+    margin-right: 3rem;
+  }
+}
 /*** pages ***/
 /***** page restaurants *****/
 .page-restaurant {
