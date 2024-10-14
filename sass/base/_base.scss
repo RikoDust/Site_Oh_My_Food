@@ -1,16 +1,12 @@
 /***** general *****/
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
+
 
 /* police de caractère pour l'ensemble des textes */
 *{

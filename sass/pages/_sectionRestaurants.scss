@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         a{
             display: flex;
             flex-direction: column;
@@ -69,17 +70,26 @@
     .restaurants{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        h3{
-            margin-left: 3rem;
-            padding: 0;
+        align-items: center;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        .title-container{
+            width: 100%;
+            max-width: 1200px;
+            text-align: left;
+            h3{
+                padding: 0;
+                margin-bottom: 0;
+            }
         }
         .restaurants-cards{
             padding: 1rem 1rem;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
+            max-width: 1200px;
             a{
                 max-width: 45%;
                 margin: 1rem 0.5rem;

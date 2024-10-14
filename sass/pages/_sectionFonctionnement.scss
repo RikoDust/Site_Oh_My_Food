@@ -63,21 +63,31 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            h3{
-                margin-left:3rem;
-                align-self: flex-start;
-            }
-            .fonctionnement-etapes{
+            width: 100%;
+            .fonctionnement-view{
+                width: 100%;
+                max-width: 1200px;
+                padding-left: 6vw;
+                padding-right: 6vw;
+                h3{
+                    align-self: flex-start;
+                    margin-bottom: 1rem;
+                }
+                .fonctionnement-etapes{
+                    display: flex;
+                    justify-content: center;
+                }
+                .fonctionnement-etapes ul{
                 display: flex;
-                justify-content: center;
-            }
-            .fonctionnement-etapes ul{
-            display: flex;
-            justify-content: space-around;
-                li{
-                    margin-left: 2rem;
-                    max-width: 330px;
+                justify-content: space-between;
+                margin: 0;
+                /*padding-right: 1rem;*/
+                    li{
+                        margin-right: 1rem;
+                        max-width: 320px;
+                    }
                 }
             }
+            
         }
-    }
+}

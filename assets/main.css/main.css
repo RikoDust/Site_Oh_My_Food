@@ -190,16 +190,11 @@
 }
 
 /***** general *****/
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 /* police de caractère pour l'ensemble des textes */
@@ -429,6 +424,7 @@ header h1 {
   align-items: center;
   text-align: center;
   background-color: #F6F6F6;
+  width: 100%;
 }
 .explorer-reservez div {
   display: flex;
@@ -545,22 +541,31 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
-  .fonctionnement h3 {
-    margin-left: 3rem;
+  .fonctionnement .fonctionnement-view {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .fonctionnement .fonctionnement-view h3 {
     align-self: flex-start;
+    margin-bottom: 1rem;
   }
-  .fonctionnement .fonctionnement-etapes {
+  .fonctionnement .fonctionnement-view .fonctionnement-etapes {
     display: flex;
     justify-content: center;
   }
-  .fonctionnement .fonctionnement-etapes ul {
+  .fonctionnement .fonctionnement-view .fonctionnement-etapes ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 1rem;
   }
-  .fonctionnement .fonctionnement-etapes ul li {
-    margin-left: 2rem;
-    max-width: 330px;
+  .fonctionnement .fonctionnement-view .fonctionnement-etapes ul li {
+    /*margin-left: 2rem;*/
+    max-width: 320px;
   }
 }
 /**** section restaurants ****/
@@ -578,6 +583,7 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .restaurants .restaurants-cards a {
   display: flex;
@@ -638,18 +644,27 @@ header h1 {
   .restaurants {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
-  .restaurants h3 {
-    margin-left: 3rem;
+  .restaurants .title-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+  }
+  .restaurants .title-container h3 {
     padding: 0;
+    margin-bottom: 0;
   }
   .restaurants .restaurants-cards {
     padding: 1rem 1rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1200px;
   }
   .restaurants .restaurants-cards a {
     max-width: 45%;
