@@ -278,7 +278,7 @@ header h1 {
   }
   footer h4 {
     margin-right: 3rem;
-    margin-left: 8rem;
+    padding-left: 4rem;
   }
   footer div ul {
     display: flex;
@@ -393,7 +393,7 @@ header h1 {
 @media (min-width: 1024px) {
   .image-container {
     width: 100%;
-    height: 390px;
+    height: 400px;
     overflow: hidden;
   }
   .image-container img {
@@ -407,6 +407,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     max-width: 75vw;
+  }
+  .page-restaurant-menu .restaurant-title {
+    margin-top: 2rem;
   }
   .page-restaurant-menu .menu-plats {
     width: 60vw;
