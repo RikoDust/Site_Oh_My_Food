@@ -48,7 +48,7 @@
 /* Pointer main cliquable */
 .heart-empty, .heart-full {
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 
 /* Affiche le coeur plein au hover */
@@ -131,7 +131,7 @@
   }
 
 
-  
+
 
 
 /***** coche coulissante *****/
