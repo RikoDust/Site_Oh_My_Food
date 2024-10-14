@@ -12,6 +12,7 @@
     opacity: 1;
   }
 }
+/* delay pour chaque section */
 .entrees-delay {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -31,34 +32,32 @@
 }
 
 /***** remplissage coeur *****/
-/* Cache la case à cocher */
-.heart-checkbox {
-  display: none;
-}
-
+/* Cache le coeur plein par défaut */
 .heart-full {
   display: none;
   position: relative;
 }
 
-.heart-empty, .heart-full {
-  cursor: pointer;
-  transition: transform 1s ease;
-}
-
+/* Style du coeur plein */
 .heart-full::before {
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text; /* Le fond ne deborde pas du coeur */
+  -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Cache la couleur d'origine pour afficher uniquement le linear-gradient */
+  color: transparent;
 }
 
-/* Quand la case est cochée, affiche le coeur plein et cache le coeur vide */
-.heart-checkbox:checked ~ .heart-empty {
+/* Pointer main cliquable */
+.heart-empty, .heart-full {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Affiche le coeur plein au hover */
+.heart-label:hover .heart-empty {
   display: none;
 }
 
-.heart-checkbox:checked ~ .heart-full {
+.heart-label:hover .heart-full {
   display: inline;
 }
 
