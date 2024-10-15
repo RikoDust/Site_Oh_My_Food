@@ -1,0 +1,62 @@
+  /***** loader *****/
+  
+
+  /* style du loader */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:$white-color;
+    z-index: 9999;
+    animation: fadeOutLoader 5s forwards;
+    .loader {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+      div {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        animation: grow-shrink 1.5s infinite;
+        &:nth-child(1) {
+          background-color :$secondary-color;
+          animation-delay: 0s;
+        }
+        &:nth-child(2) {
+          background: linear-gradient(90deg, $secondary-color,$primary-color);
+          animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          background-color :$primary-color;
+          animation-delay: 0.6s;
+        }
+      }
+    }
+  }
+
+  /* animation grow */
+  @keyframes grow-shrink {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+
+  /* transition loader - contenu de la page */
+  @keyframes fadeOutLoader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  

@@ -36,7 +36,7 @@
 /******** Media queries ********/
 
 /* Desktop version */
-@media (min-width:1024px) {
+@media (min-width:$breakpoint-desktop) {
     footer{
       display: flex;
       flex-direction: row-reverse;

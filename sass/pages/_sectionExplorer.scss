@@ -42,7 +42,7 @@
 /******** Media queries ********/
 
 /* Desktop version */
-@media (min-width:1024px) {
+@media (min-width:$breakpoint-desktop) {
   .explorer-reservez div{
     background-color: $background-grey-two;
     box-shadow: none;

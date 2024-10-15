@@ -10,10 +10,10 @@ main{
 
 /* police de caractère pour l'ensemble des textes */
 *{
-    font-family: 'roboto';
+    font-family: $base-police;
 }
 
-
+/* style liens */
 a{
     text-decoration: none;
     color: black;

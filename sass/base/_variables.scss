@@ -15,13 +15,21 @@ $background-grey-two:#EAEAEA;
 
 /**** polices ****/
 
-$logo-title:'Shrikhand';
+$logo-title:'Shrikhand', sans-serif;
+$base-police:'roboto', sans-serif;
+
 
 
 /**** styles ****/
 
 $box-shadow1: 0 4px 6px rgba(0, 0, 0, 0.3);
 $box-shadow2: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+/**** breakpoints ****/
+
+$breakpoint-desktop:1024px;
+
 
 
 

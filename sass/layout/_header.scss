@@ -21,7 +21,7 @@ header{
 /******** Media queries ********/
 
 /* Desktop version */
-@media (min-width:1024px) {
+@media (min-width:$breakpoint-desktop) {
     .header{
       box-shadow: none;
     }
