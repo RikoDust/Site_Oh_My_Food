@@ -153,6 +153,7 @@ a {
 }
 
 /*** components ***/
+/*** mise en forme "assiette" et effet coche coulissante - menu restaurant ***/
 /***** loader *****/
 /* style du loader */
 .loader-container {
@@ -303,14 +304,12 @@ header h1 {
   align-items: center;
   position: relative;
 }
-.page-restaurant .image-container {
+.page-restaurant .img-banniere {
   width: 100%;
-  max-height: 300px;
-}
-.page-restaurant .image-container img {
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  max-height: 380px;
 }
 .page-restaurant .page-restaurant-menu {
   display: flex;
@@ -347,10 +346,9 @@ header h1 {
   width: 48px;
   padding-bottom: 5px;
 }
-.page-restaurant .menu-plats .assiette {
-  overflow: hidden;
+.page-restaurant .menu-plats .assiette .assiette {
+  position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-left: 15px;
@@ -358,20 +356,62 @@ header h1 {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: padding-right 0.3s ease;
 }
-.page-restaurant .menu-plats .assiette span {
-  font-weight: bold;
-  padding-top: 24px;
-  padding-right: 10px;
-  white-space: nowrap;
+.page-restaurant .menu-plats .assiette .assiette .assiette-txt {
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.page-restaurant .menu-plats .assiette h4 {
+.page-restaurant .menu-plats .assiette .assiette .assiette-txt h4 {
   font-size: 19px;
   margin-top: 12px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.page-restaurant .menu-plats .assiette p {
+.page-restaurant .menu-plats .assiette .assiette .assiette-txt p {
   margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-restaurant .menu-plats .assiette .assiette span {
+  font-weight: bold;
+  padding-top: 28px;
+  padding-right: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.page-restaurant .menu-plats .assiette::after {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 60px;
+  height: 100%;
+  color: white;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease;
+}
+.page-restaurant .menu-plats .assiette:hover {
+  padding-right: 60px;
+}
+.page-restaurant .menu-plats .assiette:hover span {
+  transform: translateX(-5px);
+}
+.page-restaurant .menu-plats .assiette:hover::after {
+  right: 0;
 }
 .page-restaurant .btn-container {
   width: 100%;
@@ -399,12 +439,7 @@ header h1 {
 
 /* Desktop version */
 @media (min-width: 1024px) {
-  .image-container {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  .image-container img {
+  .img-banniere {
     width: 100%;
   }
   .page-restaurant-menu {
