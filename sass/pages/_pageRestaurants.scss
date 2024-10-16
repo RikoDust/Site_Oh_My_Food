@@ -1,9 +1,7 @@
 /***** page restaurants *****/
 
 .page-restaurant{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-col-align-center;
     position: relative;
         .img-banniere{
             width: 100%;
@@ -12,8 +10,7 @@
             max-height: 380px;
         }
     .page-restaurant-menu{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin-top: -45px;
         background-color: $background-grey;
         width: 100%;
@@ -22,9 +19,7 @@
         .restaurant-title{
             width: 100%;
             margin-top: 0.8rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             .logo-title{
                 font-family: $logo-title;
                 font-size: 27px;
@@ -39,11 +34,7 @@
             margin-left: 10px;
             margin-right: 10px;
             .menu-plats-title{
-                font-weight: 200;
-                margin-left: 10px;
-                border-bottom: 4px solid $tertiary-color;
-                width: 48px;
-                padding-bottom: 5px;
+                @include menu-plats-title;
             }
             .assiette{
                 @include assiette;
@@ -51,8 +42,7 @@
         }
         .btn-container{
             width: 100%;
-            display: flex;
-            justify-content: center;
+            @include flex-justi-center;
             background-color: $background-grey;
             .btn-commander{
                 @include btn;
@@ -64,16 +54,16 @@
     }
 
 
-/* Desktop version */
+/******** Media queries ********/
+
+/* Desktop version (over 1024px) */
 
 @media (min-width:$breakpoint-desktop) {
         .img-banniere{
             width: 100%;
         }
     .page-restaurant-menu{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-col-align-center;
         max-width: 75vw;
         .restaurant-title{
             margin-top: 2rem;

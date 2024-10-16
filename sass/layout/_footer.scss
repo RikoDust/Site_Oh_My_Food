@@ -35,21 +35,18 @@
 
 /******** Media queries ********/
 
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width:$breakpoint-desktop) {
     footer{
-      display: flex;
-      flex-direction: row-reverse;
+        @include flex-row-rev;
       padding-top: 4rem;
         h4{
             margin-right: 3rem;
             padding-left: 4rem;
         }
         div ul{
-            display: flex;
-            flex-direction: row;
-
-                li{
+            @include flex-row;
+            li{
                     margin: 5px;
             }
             li:nth-child(2){

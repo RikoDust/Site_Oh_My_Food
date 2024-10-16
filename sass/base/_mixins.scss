@@ -1,13 +1,68 @@
-/*** mise en page titre de section ***/
+/**** mise en page flex ****/
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-justi-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-col-justi-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-col-align-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**** mise en page titre de section ****/
 
 @mixin section-title{
     margin-left: 1rem;
     font-size: 26px;
 }
 
+@mixin menu-plats-title{
+    font-weight: 200;
+    margin-left: 10px;
+    border-bottom: $underline-title;
+    width: 48px;
+    padding-bottom: 5px;
+}
 
 
-/*** etiquettes "nouveau" ***/
+
+
+/**** etiquettes "nouveau" ****/
 
 @mixin etiquette{
     background-color: $tertiary-color;
@@ -18,7 +73,8 @@
 }
 
 
-/*** mise en forme "assiette" - menu restaurant ***/
+
+/**** mise en forme "assiette" - menu restaurant ****/
 
 @mixin assiette{
         position: relative;
@@ -33,3 +89,18 @@
         overflow: hidden;
         transition: padding-right 0.3s ease;
 }
+
+
+/**** Coupure texte animation coche coulissante ****/
+
+@mixin cut-txt{
+    overflow: hidden; // Coupe le contenu qui dépasse
+    text-overflow: ellipsis; // Ajoute les "..." si nécessaire
+}
+
+@mixin cut-txt-no-return{
+    white-space: nowrap; // Pas de retour à la ligne
+    overflow: hidden; // Coupe le contenu qui dépasse
+    text-overflow: ellipsis; // Ajoute les "..." si nécessaire
+}
+

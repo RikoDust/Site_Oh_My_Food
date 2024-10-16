@@ -1,13 +1,35 @@
 @charset "UTF-8";
 /****** imports ******/
 /*** base ***/
-/*** mise en page titre de section ***/
-/*** etiquettes "nouveau" ***/
-/*** mise en forme "assiette" - menu restaurant ***/
+/**** mise en page flex ****/
+/**** mise en page titre de section ****/
+/**** etiquettes "nouveau" ****/
+/**** mise en forme "assiette" - menu restaurant ****/
+/**** Coupure texte animation coche coulissante ****/
 /**** couleurs ****/
 /**** polices ****/
-/**** styles ****/
+/**** styles - ombres ****/
+/**** styles - underline ****/
 /**** breakpoints ****/
+/***** general *****/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* police de caractère pour l'ensemble des textes */
+* {
+  font-family: "roboto", sans-serif;
+}
+
+/* style liens */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /******** Animations générales ********/
 /**** remplissage coeur ****/
 /* Cache le coeur plein par défaut */
@@ -65,7 +87,7 @@
   animation-delay: 1800ms;
 }
 
-/***** coche coulissante *****/
+/***** coche coulissante - menus *****/
 .assiette {
   position: relative;
   display: flex;
@@ -134,25 +156,6 @@
   right: 0;
 }
 
-/***** general *****/
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
-/* police de caractère pour l'ensemble des textes */
-* {
-  font-family: "roboto", sans-serif;
-}
-
-/* style liens */
-a {
-  text-decoration: none;
-  color: black;
-}
-
 /*** components ***/
 /***** loader *****/
 /* style du loader */
@@ -217,8 +220,8 @@ a {
 /****** header ******/
 header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -233,7 +236,7 @@ header h1 {
 }
 
 /******** Media queries ********/
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   .header {
     box-shadow: none;
@@ -274,7 +277,7 @@ header h1 {
 }
 
 /******** Media queries ********/
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   footer {
     display: flex;
@@ -324,8 +327,8 @@ header h1 {
   width: 100%;
   margin-top: 0.8rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .page-restaurant .page-restaurant-menu .restaurant-title .logo-title {
   font-family: "Shrikhand", sans-serif;
@@ -383,7 +386,8 @@ header h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Desktop version */
+/******** Media queries ********/
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   .img-banniere {
     width: 100%;
@@ -416,8 +420,8 @@ header h1 {
 }
 .explorer-reservez div {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 3.5rem;
   border: none;
@@ -457,7 +461,7 @@ header h1 {
 }
 
 /******** Media queries ********/
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   .explorer-reservez div {
     background-color: #EAEAEA;
@@ -476,8 +480,8 @@ header h1 {
 }
 .fonctionnement .fonctionnement-etapes {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 .fonctionnement .fonctionnement-etapes ul {
@@ -488,12 +492,12 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 73px;
-  text-align: center;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -522,7 +526,7 @@ header h1 {
 }
 
 /******** Media queries ********/
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   .fonctionnement {
     display: flex;
@@ -549,7 +553,6 @@ header h1 {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    /*padding-right: 1rem;*/
   }
   .fonctionnement .fonctionnement-view .fonctionnement-etapes ul li {
     margin-right: 1rem;
@@ -627,7 +630,7 @@ header h1 {
 }
 
 /******** Media queries ********/
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width: 1024px) {
   .restaurants {
     display: flex;
@@ -649,8 +652,8 @@ header h1 {
     padding: 1rem 1rem;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
   }

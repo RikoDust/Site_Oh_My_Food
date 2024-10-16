@@ -8,14 +8,11 @@
         padding-top: 2rem;
     }
     .restaurants-cards{
-        display: flex ;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-col-justi-center;
         align-items: center;
         width: 100%;
         a{
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             background-color: $white-color;
             width: 92vw;
             border-radius: 20px;
@@ -37,8 +34,7 @@
                     border-top-right-radius: 20px;
                 }
                 .card-content{
-                    display: flex;
-                    flex-direction: row;
+                    @include flex-row;
                     justify-content: space-between;
                     align-items: center;
                     .card-txt{
@@ -65,12 +61,10 @@
 
 /******** Media queries ********/
 
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width:$breakpoint-desktop) {
     .restaurants{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-col-align-center;
         padding-left: 6vw;
         padding-right: 6vw;
         .title-container{
@@ -85,9 +79,8 @@
         .restaurants-cards{
             padding: 1rem 1rem;
             width: 100%;
-            display: flex;
+            @include flex-row;
             flex-wrap: wrap;
-            flex-direction: row;
             justify-content: space-between;
             max-width: 1200px;
             a{

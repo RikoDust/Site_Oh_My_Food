@@ -3,9 +3,7 @@
 
   /* style du loader */
   .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -15,8 +13,7 @@
     z-index: 9999;
     animation: fadeOutLoader 5s forwards;
     .loader {
-      display: flex;
-      justify-content: space-between;
+      @include flex-between;
       width: 80px;
       div {
         width: 16px;

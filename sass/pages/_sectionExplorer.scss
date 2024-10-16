@@ -1,16 +1,12 @@
 /**** section explorer-reservez ****/
 
 .explorer-reservez {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include flex-col-align-center;
     text-align: center;
     background-color: $background-grey;
     width: 100%;
     div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       width: 100%;
       height: 3.5rem;
       border: none;
@@ -41,7 +37,7 @@
 
 /******** Media queries ********/
 
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width:$breakpoint-desktop) {
   .explorer-reservez div{
     background-color: $background-grey-two;

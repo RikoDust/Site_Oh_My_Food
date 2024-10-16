@@ -1,9 +1,7 @@
 /****** header ******/
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     position: relative;
     box-shadow: $box-shadow2;
     .header__btn-retour{
@@ -20,7 +18,7 @@ header{
 
 /******** Media queries ********/
 
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width:$breakpoint-desktop) {
     .header{
       box-shadow: none;

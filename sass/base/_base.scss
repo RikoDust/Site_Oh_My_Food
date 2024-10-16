@@ -1,9 +1,7 @@
 /***** general *****/
 
 main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-col-justi-center;
     width: 100%;
 }
 
@@ -12,6 +10,7 @@ main{
 *{
     font-family: $base-police;
 }
+
 
 /* style liens */
 a{

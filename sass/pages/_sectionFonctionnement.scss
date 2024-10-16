@@ -8,23 +8,19 @@
         margin-bottom: 0rem;
     }
     .fonctionnement-etapes{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        @include flex-col-justi-center;
         width: 100%;
         ul{
             margin-right: 16px;
             padding-left: 21px;
             li{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center;
+                text-align: center;
                 border-radius: 20px;
                 background-color: $background-grey;
                 box-shadow: $box-shadow1;
                 width: 100%;
                 height: 73px;
-                text-align: center;
                 margin-bottom: 2rem;
                 position: relative;
                 span{
@@ -56,12 +52,10 @@
 
 /******** Media queries ********/
 
-/* Desktop version */
+/* Desktop version (over 1024px) */
 @media (min-width:$breakpoint-desktop) {
         .fonctionnement{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-col-justi-center;
             align-items: center;
             width: 100%;
             .fonctionnement-view{
@@ -74,14 +68,11 @@
                     margin-bottom: 1rem;
                 }
                 .fonctionnement-etapes{
-                    display: flex;
-                    justify-content: center;
+                    @include flex-justi-center;
                 }
                 .fonctionnement-etapes ul{
-                display: flex;
-                justify-content: space-between;
+                @include flex-between;
                 margin: 0;
-                /*padding-right: 1rem;*/
                     li{
                         margin-right: 1rem;
                         max-width: 320px;

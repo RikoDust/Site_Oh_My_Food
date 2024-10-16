@@ -68,15 +68,14 @@
 
 
 
-/***** coche coulissante *****/
+/***** coche coulissante - menus *****/
 
 .assiette {
   @include assiette;
       .assiette-txt {
           flex-grow: 1;
           margin-right: 10px;
-          overflow: hidden; // Coupe le contenu qui dépasse
-          text-overflow: ellipsis; // Ajoute les "..." si nécessaire
+          @include cut-txt;
       }
       span {
           font-weight: bold;
@@ -90,15 +89,11 @@
           font-size: 19px;
           margin-top: 12px;
           margin-bottom: 5px;
-          white-space: nowrap; // Pas de retour a la ligne
-          overflow: hidden; // Coupe le contenu qui dépasse
-          text-overflow: ellipsis; // Ajoute les "..." si nécessaire
+          @include cut-txt-no-return;
       }
       p {
           margin-top: 0;
-          white-space: nowrap; // Pas de retour a la ligne
-          overflow: hidden; // Coupe le contenu qui dépasse
-          text-overflow: ellipsis; // Ajoute les "..." si nécessaire
+          @include cut-txt-no-return;
       }
   
   &::after {
@@ -113,12 +108,11 @@
       height: 100%;
       color: $white-color;
       background-color: $tertiary-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       transition: right 0.3s ease;
   }
 
+  
   &:hover {
       padding-right: 60px; // Compense l'ajout de la case
       span {
