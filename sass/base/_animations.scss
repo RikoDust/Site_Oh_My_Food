@@ -7,8 +7,8 @@
 .heart-label {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   margin-top: 15px;
 }
 
@@ -33,6 +33,7 @@
   color: transparent;
 }
 
+/* code initial */
 /* Au hover, cache le coeur vide */
 .heart-label:hover .heart-empty {
   opacity: 0;

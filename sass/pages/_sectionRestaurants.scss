@@ -37,8 +37,9 @@
                     @include flex-row;
                     justify-content: space-between;
                     align-items: center;
+                    margin-right: 15px;
                     .card-txt{
-                        margin-left: 10px;
+                        margin-left: 10px; 
                         h4{
                             font-size: 22px;
                             margin-top: 6px;
@@ -51,7 +52,6 @@
                     }  
                     i{
                         font-size: 30px;
-                        padding-right: 25px;
                     }
                 }
             }    

@@ -36,8 +36,8 @@ a {
 .heart-label {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   margin-top: 15px;
 }
 
@@ -62,6 +62,7 @@ a {
   color: transparent;
 }
 
+/* code initial */
 /* Au hover, cache le coeur vide */
 .heart-label:hover .heart-empty {
   opacity: 0;
@@ -624,6 +625,7 @@ header h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-right: 15px;
 }
 .restaurants .restaurants-cards a .card .card-content .card-txt {
   margin-left: 10px;
@@ -639,7 +641,6 @@ header h1 {
 }
 .restaurants .restaurants-cards a .card .card-content i {
   font-size: 30px;
-  padding-right: 25px;
 }
 
 /******** Media queries ********/
