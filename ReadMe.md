@@ -15,7 +15,11 @@ Contexte : Projet de formation (Openclassrooms)
 
 ## 🖼️ Aperçu
 
-[Captures d'écran, GIF de démonstration, ou lien vers démo live]
+Captures d'écran :
+
+<img width="1535" height="930" alt="oh_my_food_home" src="https://github.com/user-attachments/assets/373eb6c9-5481-441b-a1c6-d7864fc55155" />
+<img width="1447" height="939" alt="oh_my_food_menu" src="https://github.com/user-attachments/assets/3ebe246d-b653-4f66-8947-2732fda386c3" />
+
 
 ## 🛠️ Technologies utilisées
 
