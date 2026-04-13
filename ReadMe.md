@@ -1,38 +1,83 @@
-# Oh_My_Food_!
+# [Oh_My_Food_!]
 
-Projet - Ohmyfood! (formation intégrateur web - Openclassrooms)
+[Badge optionnels : statut build, version, licence, etc.]
 
-Présentation : Réalisation du site web d'une start-up proposant la commande de repas en ligne
+## 📋 À propos
 
-- Intégration page d'accueil
-- Intégration de pages restaurants
-- Réalisation et intégration d'animations CSS
-- Gerer la partie responsive pour Desktop, tablette (projet en mobile-first)
-- Gestion et developpement CSS avec Sass
+[2-3 phrases décrivant le projet, son objectif principal et sa valeur ajoutée]
 
+**Contexte :** [Projet de formation / Projet personnel / Projet professionnel]
 
-Objectif pédagogiques : 
+## ✨ Fonctionnalités principales
 
-- Intégrer une maquette en mobile-first
-- Mettre en oeuvre des animations CSS
-- Versionner son projet avec Git et Github
+- Fonctionnalité 1
+- Fonctionnalité 2
+- Fonctionnalité 3
 
+## 🖼️ Aperçu
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~ liens ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Captures d'écran, GIF de démonstration, ou lien vers démo live]
 
-Lien Github : https://github.com/RikoDust/Site_Oh_My_Food
+## 🛠️ Technologies utilisées
 
-Lien Github Pages : https://rikodust.github.io/Site_Oh_My_Food/
+**Frontend :**
+- [Liste des technologies]
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Backend :**
+- [Liste des technologies]
 
+**Outils & DevOps :**
+- [Liste des outils]
 
+## 🚀 Installation et utilisation
 
------------------------ veille technique -----------------------
+### Prérequis
+- [Ex: Node.js v18+]
+- [Autres dépendances]
 
-Voici une presentation des elements pouvant etre gérés par l'intégration de JavaScript
+### Installation
 
- - Le loader (afficher et masquer le loader)
- - Le remplissage du coeur (déclancher l'animation au clique et maintenir l'état)
- - L'apparition progressive des menus (déclancher l'animation à l'ouverture de la page ou au niveau de lecture)
- - La coche coulissante (déclancher l'animation au clique)
+```bash
+# Cloner le repository
+git clone [url]
+
+# Installer les dépendances
+npm install
+
+# Lancer en mode développement
+npm run dev
+```
+
+### Variables d'environnement
+
+```env
+DATABASE_URL=
+API_KEY=
+```
+
+## 📚 Apprentissages & Défis
+
+[Section optionnelle, particulièrement utile pour projets de formation]
+
+**Ce que j'ai appris :**
+- Compétence/concept 1
+- Compétence/concept 2
+
+**Défis rencontrés :**
+- Défi 1 et comment je l'ai résolu
+
+## 🎯 Évolutions futures
+
+- [ ] Fonctionnalité à ajouter
+- [ ] Amélioration prévue
+
+## 👤 Auteur
+
+**[Votre Nom]**
+- Portfolio : [lien]
+- LinkedIn : [lien]
+- GitHub : [@username](lien)
+
+## 📝 Licence
+
+[MIT / Autre licence ou "Projet d'apprentissage - Non destiné à la production"]
