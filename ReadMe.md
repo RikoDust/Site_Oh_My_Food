@@ -3,7 +3,7 @@
 
 ## 📋 À propos
 
-Projet de formation consistant en la réalisation d'un site web d'une start-up proposant la commande de rempas en ligne
+Projet de formation consistant en la réalisation d'un site web d'une start-up proposant la commande de repas en ligne
 
 Contexte : Projet de formation (Openclassrooms)
 
