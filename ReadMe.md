@@ -1,12 +1,11 @@
-# [Oh_My_Food_!]
+# Oh_My_Food_!
 
-[Badge optionnels : statut build, version, licence, etc.]
 
 ## 📋 À propos
 
 [2-3 phrases décrivant le projet, son objectif principal et sa valeur ajoutée]
 
-**Contexte :** [Projet de formation / Projet personnel / Projet professionnel]
+**Contexte : Projet de formation (Openclassrooms)
 
 ## ✨ Fonctionnalités principales
 
