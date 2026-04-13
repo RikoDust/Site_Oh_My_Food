@@ -3,15 +3,15 @@
 
 ## 📋 À propos
 
-[2-3 phrases décrivant le projet, son objectif principal et sa valeur ajoutée]
+Projet de formation consistant en la réalisation d'un site web d'une start-up proposant la commande de rempas en ligne
 
-**Contexte : Projet de formation (Openclassrooms)
+Contexte : Projet de formation (Openclassrooms)
 
 ## ✨ Fonctionnalités principales
 
-- Fonctionnalité 1
-- Fonctionnalité 2
-- Fonctionnalité 3
+- Un page d'accueil avec annimations
+- Systeme de carte pour présentation des restaurants
+- Un page par restaurant proposant le menu de ce dernier
 
 ## 🖼️ Aperçu
 
@@ -20,63 +20,49 @@
 ## 🛠️ Technologies utilisées
 
 **Frontend :**
-- [Liste des technologies]
+- HTML
+- CSS
+- SCSS
 
-**Backend :**
-- [Liste des technologies]
 
 **Outils & DevOps :**
-- [Liste des outils]
+- Git / GitHub
+- VS Code
 
-## 🚀 Installation et utilisation
-
-### Prérequis
-- [Ex: Node.js v18+]
-- [Autres dépendances]
-
-### Installation
-
-```bash
-# Cloner le repository
-git clone [url]
-
-# Installer les dépendances
-npm install
-
-# Lancer en mode développement
-npm run dev
-```
-
-### Variables d'environnement
-
-```env
-DATABASE_URL=
-API_KEY=
-```
 
 ## 📚 Apprentissages & Défis
 
 [Section optionnelle, particulièrement utile pour projets de formation]
 
-**Ce que j'ai appris :**
-- Compétence/concept 1
-- Compétence/concept 2
+Ce que j'ai appris :
+- Intégration page d'accueil
+- Intégration de pages restaurants
+- Réalisation et intégration d'animations CSS
+- Gérer la partie responsive pour Dektop, tablette (projet en mobile first)
+- Gestion et développement CSS avec Sass
 
-**Défis rencontrés :**
-- Défi 1 et comment je l'ai résolu
+**Objectifs pédagogiques :**
+- Intégrer une maquette en mobile-first
+- Mettre en oeuvre des animations CSS
+- Versionner son projet avec Git et GitHub
 
-## 🎯 Évolutions futures
+## 🎯 Évolutions futures/possibles
 
-- [ ] Fonctionnalité à ajouter
-- [ ] Amélioration prévue
+Voici une présentation des éléments pouvant etre gérer par l'intégration de JavaScript
+
+- [ ] Le loader (afficher et masquer le loader)
+- [ ] Le remplissage du coeur (déclancher l'animation au clique et maintenir l'état)
+- [ ]  L'apparation progressive des menus (déclencher l'animation à l'ouverture de la page ou au niveau de lecture)
+- [ ] La coche coulissante (déclencher l'animation au clique)
 
 ## 👤 Auteur
 
-**[Votre Nom]**
-- Portfolio : [lien]
-- LinkedIn : [lien]
-- GitHub : [@username](lien)
+**Emeric**
+- Portfolio : https://www.epataut.fr/
+- LinkedIn : https://www.linkedin.com/in/emeric-pataut/
+- GitHub : https://github.com/RikoDust/Site_Oh_My_Food
 
 ## 📝 Licence
 
-[MIT / Autre licence ou "Projet d'apprentissage - Non destiné à la production"]
+Projet d'apprentissage réalisé dans le cadre de ma formation.  
+Non destiné à une utilisation en production.
