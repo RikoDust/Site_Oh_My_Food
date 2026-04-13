@@ -32,8 +32,6 @@ Contexte : Projet de formation (Openclassrooms)
 
 ## 📚 Apprentissages & Défis
 
-[Section optionnelle, particulièrement utile pour projets de formation]
-
 Ce que j'ai appris :
 - Intégration page d'accueil
 - Intégration de pages restaurants
